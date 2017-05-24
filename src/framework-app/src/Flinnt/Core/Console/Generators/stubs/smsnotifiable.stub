@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+use Flinnt\Core\SMS\SMSNotifiable;
+
+class DummyClass extends SMSNotifiable
+{
+
+	protected $smsData = [];
+
+	/**
+	 * Build the message.
+	 *
+	 * @return $this
+	 */
+	public function build()
+	{
+		$template = 'Your SMS Template';
+
+		return $this->getSMSTemplate($template, $this->smsData['your_key'], $this->smsData['your_key1']);
+	}
+
+	public function processSMS(array $recipients = null, $saveInQueue = false, $delay = 0)
+	{
+		//Write your SMS processing logic here
+	}
+}

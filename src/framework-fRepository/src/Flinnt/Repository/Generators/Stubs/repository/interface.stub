@@ -1,0 +1,14 @@
+<?php
+
+$NAMESPACE$
+
+use Flinnt\Repository\Contracts\RepositoryInterface;
+
+/**
+ * Interface $CLASS$Repo
+ * @package $NAMESPACE$
+ */
+interface $CLASS$Repo extends RepositoryInterface
+{
+    //
+}

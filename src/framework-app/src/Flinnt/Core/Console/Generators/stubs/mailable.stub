@@ -1,0 +1,25 @@
+<?php
+
+namespace DummyNamespace;
+
+use Flinnt\Core\Contracts\Mail\Mailable;
+
+class DummyClass extends Mailable
+{
+	protected $mailViewData = [];
+
+	/**
+	 * Build the message.
+	 *
+	 * @return $this
+	 */
+	public function build()
+	{
+		return $this->view('your.view.name', $this->mailViewData);
+	}
+
+	protected function processEmail(array $recipients = null, $saveInQueue = false, $delay = 0)
+	{
+		//Write your email processing logic here
+	}
+}

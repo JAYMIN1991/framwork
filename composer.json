@@ -1,0 +1,51 @@
+{
+  "name": "flinnt/framework",
+  "description": "The Flinnt Framework",
+  "type": "project",
+  "license": "Flinnt.com",
+  "authors": [
+    {
+      "name": "flinnt",
+      "email": "flinnt@flinnt.com"
+    }
+  ],
+  "minimum-stability": "stable",
+
+  "require": {
+    "php": ">=5.6.4",
+    "laravel/framework": "5.3.*",
+    "rcrowe/twigbridge": "^0.9.3",
+    "laravelcollective/html": "^5.2.0",
+    "prettus/laravel-validation": "1.1.*",
+    "league/fractal": "^0.14.0",
+    "predis/predis": "^1.1",
+    "twilio/sdk": "^4.11",
+    "lord/laroute": "2.*",
+    "cartalyst/sentinel": "2.0.*",
+    "doctrine/dbal": "^2.5",
+    "m6web/firewall": "^1.0",
+    "felixkiss/uniquewith-validator": "2.*"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~5.0",
+    "symfony/css-selector": "3.1.*",
+    "symfony/dom-crawler": "3.1.*",
+    "barryvdh/laravel-ide-helper": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Flinnt\\Repository\\":"src/framework-fRepository/src/Flinnt/Repository",
+      "Flinnt\\BackOffice\\":"src/framework-app/src/Flinnt/BackOffice",
+      "Flinnt\\Core\\":"src/framework-app/src/Flinnt/Core",
+      "Flinnt\\ACL\\":"src/framework-acl/src/Flinnt",
+      "Mobisoft\\SMS\\API\\":"src/vendor/mobisoft/mobisoft/src",
+      "Flinnt\\Core\\Test\\":"src/framework-app/tests/Flinnt/Core",
+      "Flinnt\\Repository\\Test\\":"src/framework-fRepository/tests"
+    },
+    "files":[
+
+    ]
+  }
+}

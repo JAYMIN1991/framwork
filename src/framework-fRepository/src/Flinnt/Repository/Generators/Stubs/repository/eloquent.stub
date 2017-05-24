@@ -1,0 +1,43 @@
+<?php
+
+$NAMESPACE$
+
+use Flinnt\Repository\Eloquent\BaseRepository;
+use Flinnt\Repository\Criteria\RequestCriteria;
+use $REPOSITORY$
+$USE_VALIDATOR$
+
+/**
+ * Class $CLASS$
+ * @package $NAMESPACE$
+ */
+class $CLASS$ extends BaseRepository implements $CLASS$Repo
+{
+
+   /**
+   	 * Primary Key
+   	 * @var String
+   	 */
+   	protected $primaryKey = 'id';
+
+
+    /**
+     * Specify Tablename
+     *
+     * @return string
+     */
+    public function model()
+    {
+        return $MODEL$;
+    }
+
+    $VALIDATOR$
+
+    /**
+     * Boot up the repository, pushing criteria
+     */
+    public function boot()
+    {
+        $this->pushCriteria(app(RequestCriteria::class));
+    }
+}

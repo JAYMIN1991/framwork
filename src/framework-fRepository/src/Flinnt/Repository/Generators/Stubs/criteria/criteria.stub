@@ -1,0 +1,26 @@
+<?php
+
+$NAMESPACE$
+
+use Flinnt\Repository\Criteria\AbstractCriteria;
+use Flinnt\Repository\Contracts\RepositoryInterface;
+
+/**
+ * Class $CLASS$Crit
+ * @package $NAMESPACE$
+ */
+class $CLASS$Crit extends AbstractCriteria
+{
+    /**
+     * Apply criteria in query repository
+     *
+     * @param                     $model
+     * @param RepositoryInterface $repository
+     *
+     * @return mixed
+     */
+    public function apply($model, RepositoryInterface $repository)
+    {
+        return $model;
+    }
+}
